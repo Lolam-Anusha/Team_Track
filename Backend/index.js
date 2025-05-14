@@ -26,6 +26,6 @@ app.use("/api/setting", settingRouter)
 app.use("/api/dashboard", dashboardRouter)
 
 app.listen(process.env.PORT, ()=>{
-    console.log(`Server is running on port - http://localhost:${process.env.PORT}`)
+    console.log(`Server is running on port -https://team-track-ems.onrender.com:${process.env.PORT}`)
 })
 connectToDatabase()
