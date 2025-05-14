@@ -11,8 +11,6 @@ import dashboardRouter from "./routes/dashboard.js"
 import connectToDatabase from "./db/db.js"
 
 
-connectToDatabase()
-
 env.config()
 
 const app = express()
@@ -30,3 +28,4 @@ app.use("/api/dashboard", dashboardRouter)
 app.listen(process.env.PORT, ()=>{
     console.log(`Server is running on port - http://localhost:${process.env.PORT}`)
 })
+connectToDatabase()
